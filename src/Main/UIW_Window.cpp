@@ -3,9 +3,9 @@
 // * Description:    UI Wizard Window Source File                            * //
 // * Author:         TT                                                      * //
 // * Website:        https://github.com/The-Wizardium/UI-Wizard              * //
-// * Version:        0.2.3                                                   * //
+// * Version:        0.2.4                                                   * //
 // * Dev. started:   12-12-2024                                              * //
-// * Last change:    08-11-2025                                              * //
+// * Last change:    16-12-2025                                              * //
 /////////////////////////////////////////////////////////////////////////////////
 
 
@@ -593,11 +593,6 @@ void UIWizardWindow::DragEnd() {
 void UIWizardWindow::HandleESCKey() {
 	int cfgValue = UIWizardSettings::ESCKey;
 	auto action = static_cast<ESCKeyAction>(cfgValue);
-
-	if (UIWHWindow::IsWindowState("Fullscreen")) {
-		UIWizard::Window()->ToggleFullscreen();
-		return;
-	}
 
 	switch (action) {
 		case ESCKeyAction::None: {

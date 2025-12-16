@@ -42,6 +42,19 @@ weaving elegance and stability into foobar2000’s ethereal form.*
 <br>
 <br>
 
+## Version 0.2.4 - 16-12-2025
+This release is a small update that restores the default ESC key behavior.
+
+<br>
+
+### Changed:
+- Removed the forced fullscreen exit when pressing the ESC key.
+- Developers should now control this behavior using the `ExitFullscreen` API in JavaScript.
+
+
+<br>
+<br>
+
 ## Version 0.2.3 - 08-11-2025
 This release is a hotfix addressing fullscreen and window state issues.
 
